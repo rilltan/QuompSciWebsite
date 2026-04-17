@@ -1,5 +1,5 @@
 ---
-title: Test post
+title: Post 1
 date: 2026-04-16
 ---
 
