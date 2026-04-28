@@ -42,6 +42,9 @@ h2 {
   margin-bottom: 0.5rem;
   font-family: 'Courier New', Courier, monospace;
 }
+main p, main ul {
+  margin-bottom:1rem;
+}
 
 ul {
   list-style-position: inside;
@@ -91,7 +94,7 @@ header nav {
 
 .site-title:any-link {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 4.5vw, 1.5rem);
   text-decoration: none;
   color: inherit;
 }
@@ -105,7 +108,7 @@ header nav ul {
 header nav ul a:any-link {
   color: #56cb29;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 4.5vw, 1.5rem);
   transition-property: color;
   transition-duration: 200ms;
 }
