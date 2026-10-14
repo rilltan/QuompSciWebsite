@@ -1,7 +1,7 @@
 ---
 title: Anaglyph AI
 author: Duy Huynh
-description: Lorem ipsum dolor sit amet
+description: Automatically convert images to 3D anaglyphs
 date: 2025-01-01
 ---
 

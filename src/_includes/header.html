@@ -1,11 +1,15 @@
 <header>
   <nav>
-    <a href="/" class="site-title">{{ site.name }}</a>
+    <a href="/" class="site-title">
+      {{ site.name }}
+    </a>
     <ul>
-      <li><a href="/" {% if page.fileSlug == "" %}class="current-page"{% endif %}>home</a></li>
-      <li><a href="/about" {% if page.fileSlug == "about" %}class="current-page"{% endif %}>about</a></li>
-      <li><a href="/dinner" {% if page.fileSlug == "dinner" %}class="current-page"{% endif %}>dinner</a></li>
-      <li><a href="/posts" {% if page.fileSlug == "posts" or tags contains "post" %}class="current-page"{% endif %}>projects</a></li>
+      {% for item in nav %}
+        <li><a href="{{ item.url }}"
+          {% if page.url == item.url or item.url != "/" and page.url contains item.url %}aria-current="page"{% endif %}>
+          {{ item.label }}</a>
+        </li>
+      {% endfor %}
     </ul>
   </nav>
 </header>
